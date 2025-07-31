@@ -1,51 +1,65 @@
-# 🧹 Sales Data Cleaning Project (SQL)
+📊 Sales Data Exploratory Data Analysis (EDA) Project
+This project involves performing comprehensive Exploratory Data Analysis (EDA) on a cleaned sales dataset using SQL. The analysis provides insights into profit trends, customer behavior, product performance, and geographic performance, helping uncover key business opportunities and challenges.
 
-This project demonstrates a complete data cleaning workflow on a raw sales dataset using SQL. The dataset includes transaction details such as dates, customer demographics, product information, and financial metrics (cost, price, revenue, and profit).
+📂 Dataset Overview
+The dataset includes transactional sales data with the following attributes:
 
-## 📄 Dataset Columns
+📅 Date, Day, Month, Year
 
-- `Date`, `Day`, `Month`, `Year`
-- `Customer_Age`, `Age_Group`, `Customer_Gender`
-- `Country`, `State`
-- `Product_Category`, `Sub_Category`, `Product`
-- `Order_Quantity`, `Unit_Cost`, `Unit_Price`
-- `Profit`, `Cost`, `Revenue`
+🧑‍🤝‍🧑 Customer_Age, Age_Group, Customer_Gender
 
----
+🌍 Country, State
 
-## 🧽 Cleaning Steps Performed
+📦 Product_Category, Sub_Category, Product
 
-### 1. **Removed Duplicates**
-- Used `ROW_NUMBER()` and a CTE to identify and delete duplicate rows.
+🔢 Order_Quantity, Unit_Cost, Unit_Price
 
-### 2. **Standardized Text Data**
-- Converted categorical text columns like `country`, `state`, `product_category`, etc., to lowercase for consistency.
+💰 Profit, Cost, Revenue
 
-### 3. **Handled Inconsistent Data Types**
-- Converted the `Date` column from text format to proper `DATE` type.
+🔍 Key Business Questions Answered
+Which country, state, and product generate the most profit?
 
-### 4. **Recalculated Financial Metrics**
-- Recalculated `Profit`, `Cost`, and `Revenue` to ensure they were accurate and non-negative.
+What is the profit trend across months and years?
 
-### 5. **Checked and Handled Null or Blank Values**
-- Converted blank values to `NULL`
-- Checked for any remaining nulls — none were found in the cleaned dataset.
+Which categories and subcategories are most in demand?
 
-### 6. **Trimmed Extra Spaces**
-- Verified and ensured there were no trailing or leading whitespaces in key columns.
+What are the top-performing products per country?
 
-### 7. **Created Indexes**
-- Added indexes to improve query performance on columns like `Date`, `Country`, `Product`, `Order_Quantity`, and `Year`.
+How does price relate to quantity sold?
 
----
+What customer demographics bring the most profit?
 
-## 🛠️ Tools Used
+📈 Highlights of Analysis
+🏆 Top Performers
+Country with the highest daily and monthly profit
 
-- MySQL
-- SQL queries
-- VS Code (or any SQL IDE)
+Product categories and subcategories with the highest demand
 
----
+Top 5 products per country by profit
 
-## 📁 Project Structure
+📊 Profit Trends
+Monthly and yearly profit analysis
 
+Profit margin by product category
+
+Revenue, cost, and profit over time
+
+🧍‍♂️ Customer Insights
+Profitability by age group and gender
+
+Gender distribution and buying trends
+
+🗺️ Geographic Insights
+Profit by country and state
+
+State with highest profit per country
+
+🛠️ Tools & Technologies Used
+Tool	        Purpose
+SQL    	      Data querying and analysis
+MySQL        	Database engine used
+VS Code      	Query execution & development
+
+📌 Conclusion
+This EDA project provided actionable insights into sales trends, customer preferences, product performance, 
+and regional profitability. It demonstrates how SQL can be effectively used for business intelligence and decision-making support.
