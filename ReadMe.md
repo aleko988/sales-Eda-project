@@ -1,4 +1,4 @@
-📊 Sales Data Exploratory Data Analysis (EDA) Project
+#📊 Sales Data Exploratory Data Analysis (EDA) Project
 This project involves performing comprehensive Exploratory Data Analysis (EDA) on a cleaned sales dataset using SQL. The analysis provides insights into profit trends, customer behavior, product performance, and geographic performance, helping uncover key business opportunities and challenges.
 
 📂 Dataset Overview
